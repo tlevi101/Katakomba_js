@@ -1,0 +1,253 @@
+main, footer, .main {
+    background-color: rgba(150, 150, 150);
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+}
+
+p {
+    font-size: 120%;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+#locked {
+    filter: hue-rotate(70deg);
+}
+
+#game {
+    padding: 10%;
+    padding-top: 15%;
+}
+
+#treasurecount {
+    margin-left: 20%;
+    width: 60%;
+}
+
+table {
+    margin: auto;
+    width: 90%;
+}
+
+table#gameArea {
+    border-radius: 20px;
+    background-color: darkslateblue;
+    width: 90%;
+}
+
+.border {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+td {
+    position: relative;
+}
+
+body {
+    background-color: #474747;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.treasure {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+#blue, #red, #green, #lightGreen {
+    position: absolute;
+    background-color: rgba(71, 61, 139, 0.4);
+    border-radius: 20px;
+    width: 12%;
+}
+
+.playerp {
+    margin: 0%;
+}
+
+.pawn {
+    position: absolute;
+    top:2%;
+    left: 15%;
+    width: 70%;
+    height: 85%;
+}
+
+.inactive {
+    opacity: 0.5;
+}
+
+#P90, #N90, #OK {
+    position: absolute;
+    width: 7%;
+}
+#P90:hover, #N90:hover, #OK:hover{
+    filter: hue-rotate(180deg);
+}
+td img:hover{
+    filter: hue-rotate(0deg) !important;
+}
+#P90 {
+    left: 38%;
+    top: 2%;
+}
+
+#N90 {
+    right: 38%;
+    top: 2%
+}
+
+#OK {
+    width: 10%;
+    top: 9%;
+    left: 45%;
+}
+
+.freeTile {
+    position: absolute;
+    width: 8%;
+    left: 46%;
+    top: 2%
+}
+
+.freeTile img {
+    border-radius: 20px;
+}
+
+#pawnBlue {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    left: 0%
+}
+
+#pawnRed {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    left: 50%
+}
+
+#pawnGreen {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 0%
+}
+
+#pawnLightGreen {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%
+}
+#end{
+    position: absolute;
+    z-index: 1;
+    background-color: darkcyan;
+    border-radius: 20px;
+    left: 30%;
+    top:40%;
+    width: 40%;
+    height: 20%;
+}
+#restart{
+    position: absolute;
+    left:30%;
+    width: 40%;
+    height: 20%;
+    border-radius: 20px;
+}
+#start{
+    height: 50px;
+}
+#start button{
+    font-size: 120%;
+    position: absolute;
+    left:30%;
+    top: 0%;
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+}
+#help{
+    left: 60%!important;
+    top: 0%;
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: cornflowerblue;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+#treasurecount{
+    width: 37px;
+    height: 20px;
+    border-radius: 20px;
+    font-size: 120%;
+}
+#treasurecount[value]{
+    text-align: center;
+}
+#helps{
+    position: absolute;
+    top:0%;
+    width: 100%;
+    background-color: rgba(150, 150, 150);
+    border-radius: 20px;
+}
+li p{
+    margin-right: 5%;
+}
+#exithelp{
+    position: absolute;
+    top:1%;
+    width:10%;
+    height: 3%;
+    left:45%;
+    border-radius: 20px;
+}
+#name_of_save{
+    position: absolute;
+    bottom: 6%;
+    width: 16%;
+    left:42%;
+    text-align: center;
+    border-radius: 20px;
+}
+#save{
+    position: absolute;
+    bottom: 1%;
+    width: 10%;
+    height: 5%;
+    left:45%;
+    border-radius: 20px;
+}
+.loadit{
+    margin-left: 45%;
+    width: 10%;
+    height: 10%;
+    border-radius: 20px;
+}

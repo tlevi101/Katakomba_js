@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katakomba</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+       
+        <div id="home">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>
+                                A jétékosok száma:
+                            </p>
+                        </td>
+                        <td>
+                            <input type="radio" name="count" value="1">
+                            <label>1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="count" value="2" checked>
+                            <label>2</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="count" value="3">
+                            <label>3</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="count" value="4">
+                            <label>4</label>
+                        </td>
+                    </tr>
+                    <tr id="cOfTreasure">
+                        <td colspan="2">
+                            <p>Játékosonként kincskértyák száma: </p>
+                        </td>
+                        <td colspan="2">
+                            <input id="treasurecount" type="number" min="1" max="12" step="1" value="2">
+                        </td>
+                    </tr>
+                    <tr id="start">
+                        <td colspan="4">
+                            <button>Start</button>
+                            <button id="help">Leírás</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="end">
+            <p>aaa</p>
+            <button id="restart">Restart</button>
+        </div>
+        <div id="helps">
+            <ul>
+                <li>
+                    <h2>Kezdés</h2>
+                    <p>
+                        A kezdő képernyőn belehet állítani, hogy hány játékos játszik, és hogy játékosonként hány kincs kártya lehet.
+                    </p>
+                </li>
+                <li>
+                    <h2>Játék</h2>
+                    <p>
+                        A játék terület egy labirintus, ahol a szobákat lehet tologatni, azáltal, hogy a kimaradt szobát becsúsztatjuk valahova.<br>
+                        A játék során minden játékosnak kincseket kell gyűjtenie, aki először
+                        össze gyüjti azt amit kellett neki, és vissza ér abba a sarokban ahol kezdett, akkor
+                        megnyerte a játékot. 
+                    </p>
+                </li>
+                <li>
+                    <h2>Lépés</h2>
+                    <p>
+                        A játékot a kék játékos kezdi, majd a piros, zöld és világos zöld követi ebben a sorrendben.
+
+                        A lépés két részből áll, elsőnek mindenkinek be kell csúsztatni a kimardt szobát, majd dönt, hogy elszeretne-e lépni.<br>
+                        A becsusztatható szoba az oldal tetején látható, melette a forgatást jelző nyilak, és alatta egy pipa amivel belehet csúsztatni az adott sorba.
+                        Abba a sorba, oszlopba lehet becsúsztatni amelyik szélén van egy kis nyilacska, ezekre a nyilacskákra kattintva lehet ideiglenesen lehelyezni
+                        majd a pipa megnyomásával becsúszattni a sorba. Arra a nyilacskára nem lehet rá helyezni a szobát ahova előzőleg már egy másik játélos helyezet le egyet.<br>
+                        Becsúsztatás után rákell kattintani a bábura, hogy megjelenjen az útvonal amin lehet menni, ezen a vonalon bárhova lehet lépni. Amennyiben valaki nem szeretne lépni, fent a pipával kell ezt jelezni, és így az ő köre végetért.<br>
+                        Ha egy vagy több játékos (egy mezőn/szobában többen is lehetnek) van a szobában ami ki lett tolva, akkor ezek a játékosok
+                        arra a mezőre kerülnek ami éppen be lett csúsztatva.
+                    </p>
+                </li>
+                <li>
+                    <h2>Játékos kártyák</h2>
+                    <p>
+                        A játékosok adatai a 4 sarokban találhatók, rajta a bábu amivel vannak, számuk, az aktuális kincse
+                        amit bekell gyüjteniük, és alatta az hogy eddig hány kincset gyűjtöttek be.<br>
+                        Továbbá a kártyák jelzik melyik játékosnak van éppen a köre, akineka  köre van annka a kártyája tisztán látható, míg a többiek kártyájája kicsit átlátszó.
+                    </p>
+                </li>
+                <li>
+                    <h2>Kincsek</h2>
+                    <p>
+                        Ugyan azt a kincset több játékos is begyűjtheti ha éppen kell neki, illetve olyan kincset nem lehet begyűjteni ami nem szerepel a kincs kártyán.<br>
+                        Előfurdulhat, hogy egy becsúsztatott mezőn van kincs és becsusztatás következtében rákerül egy játékos,
+                        ilyenkor (amennyiben több játékos vana mezőn) elsősorban aza játékos kapja meg a kincset aki a becsúszatást elvégezte,
+                        ha neki nincs szüksége rá, akkor az első olyan játékos kapja meg akinek szüksége van rá(kék, piros, zöld, világoskék) 
+                    </p>
+                </li>
+            </ul>
+            <button id="exithelp">Vissza</button>
+        </div>
+        <div id="game">
+            <button id="save">Mentés</button>
+            <input id="name_of_save">
+        </div>
+        <div id="saved">
+            <p>Menttett játékok:</p>
+        </div>
+    </main>
+    <script src="save.js"></script>
+    <script src="home.js"></script>
+    <script src="index.js"></script>
+    <script src="move.js"></script>
+    <script src="step.js"></script>
+    <script src="end.js"></script>
+
+</body>
+
+</html>
